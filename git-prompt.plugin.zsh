@@ -9,6 +9,9 @@ colors
 # Allow for functions in the prompt.
 setopt PROMPT_SUBST
 
+# Disable Caching
+ZSH_THEME_GIT_PROMPT_NOCACHE=1
+
 autoload -U add-zsh-hook
 
 add-zsh-hook chpwd chpwd_update_git_vars
